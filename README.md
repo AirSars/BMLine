@@ -62,5 +62,9 @@ BMLinePostionCustomAll        ======View四周
 -------
 可以在defines.h的相应区域内找到一些可定制的参数
 
+注意事项？
+--------
+如果你使用自动布局，请不要在viewDidLoad和viewWillAppear中一上来就使用噢，那会View的frame其实还没计算好，很容易出现大小不对的问题~建议在viewDidAppear中使用
+
 另外还做了一些防Crash的处理，有问题和好的建议可以和我联系：QQ 188561521
 -------
