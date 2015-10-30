@@ -90,7 +90,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F12D94731BE353A000753651 /* BMLine */ = {
+		F10309381BE36B7900A0BA6A /* BMLines */ = {
 			isa = PBXGroup;
 			children = (
 				F1C5979F1BD723CA00C63149 /* UIView+BMLine.h */,
@@ -99,8 +99,9 @@
 				F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */,
 				F1C597AF1BD768C700C63149 /* BMDefines.h */,
 			);
-			path = BMLine;
-			sourceTree = "<group>";
+			name = BMLines;
+			path = BMLine/BMLines;
+			sourceTree = SOURCE_ROOT;
 		};
 		F1C5975B1BD722AB00C63149 = {
 			isa = PBXGroup;
@@ -125,7 +126,7 @@
 		F1C597661BD722AB00C63149 /* BMLine */ = {
 			isa = PBXGroup;
 			children = (
-				F12D94731BE353A000753651 /* BMLine */,
+				F10309381BE36B7900A0BA6A /* BMLines */,
 				F1C5976A1BD722AB00C63149 /* AppDelegate.h */,
 				F1C5976B1BD722AB00C63149 /* AppDelegate.m */,
 				F1C5976D1BD722AB00C63149 /* ViewController.h */,
