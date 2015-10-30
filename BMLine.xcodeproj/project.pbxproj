@@ -58,11 +58,11 @@
 		F1C5979A1BD722D400C63149 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		F1C5979B1BD722D400C63149 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		F1C5979C1BD722D400C63149 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		F1C5979F1BD723CA00C63149 /* UIView+BMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMLine.h"; sourceTree = "<group>"; };
-		F1C597A01BD723CA00C63149 /* UIView+BMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMLine.m"; sourceTree = "<group>"; };
-		F1C597A31BD72A4100C63149 /* BMLineCumstomDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLineCumstomDefault.h; sourceTree = "<group>"; };
-		F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLineCumstomDefault.m; sourceTree = "<group>"; };
-		F1C597AF1BD768C700C63149 /* BMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMDefines.h; sourceTree = "<group>"; };
+		F1C5979F1BD723CA00C63149 /* UIView+BMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BMLine.h"; path = "../UIView+BMLine.h"; sourceTree = "<group>"; };
+		F1C597A01BD723CA00C63149 /* UIView+BMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BMLine.m"; path = "../UIView+BMLine.m"; sourceTree = "<group>"; };
+		F1C597A31BD72A4100C63149 /* BMLineCumstomDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMLineCumstomDefault.h; path = BMLine/BMLineCumstomDefault.h; sourceTree = SOURCE_ROOT; };
+		F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMLineCumstomDefault.m; path = BMLine/BMLineCumstomDefault.m; sourceTree = SOURCE_ROOT; };
+		F1C597AF1BD768C700C63149 /* BMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BMDefines.h; path = ../BMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F12D94731BE353A000753651 /* BMLine */ = {
+			isa = PBXGroup;
+			children = (
+				F1C5979F1BD723CA00C63149 /* UIView+BMLine.h */,
+				F1C597A01BD723CA00C63149 /* UIView+BMLine.m */,
+				F1C597A31BD72A4100C63149 /* BMLineCumstomDefault.h */,
+				F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */,
+				F1C597AF1BD768C700C63149 /* BMDefines.h */,
+			);
+			path = BMLine;
+			sourceTree = "<group>";
+		};
 		F1C5975B1BD722AB00C63149 = {
 			isa = PBXGroup;
 			children = (
@@ -113,11 +125,11 @@
 		F1C597661BD722AB00C63149 /* BMLine */ = {
 			isa = PBXGroup;
 			children = (
+				F12D94731BE353A000753651 /* BMLine */,
 				F1C5976A1BD722AB00C63149 /* AppDelegate.h */,
 				F1C5976B1BD722AB00C63149 /* AppDelegate.m */,
 				F1C5976D1BD722AB00C63149 /* ViewController.h */,
 				F1C5976E1BD722AB00C63149 /* ViewController.m */,
-				F1C597A21BD723D200C63149 /* BMLine */,
 				F1C5979A1BD722D400C63149 /* TestViewController.h */,
 				F1C5979B1BD722D400C63149 /* TestViewController.m */,
 				F1C5979C1BD722D400C63149 /* TestViewController.xib */,
@@ -154,18 +166,6 @@
 				F1C5978E1BD722AB00C63149 /* Info.plist */,
 			);
 			path = BMLineUITests;
-			sourceTree = "<group>";
-		};
-		F1C597A21BD723D200C63149 /* BMLine */ = {
-			isa = PBXGroup;
-			children = (
-				F1C5979F1BD723CA00C63149 /* UIView+BMLine.h */,
-				F1C597A01BD723CA00C63149 /* UIView+BMLine.m */,
-				F1C597A31BD72A4100C63149 /* BMLineCumstomDefault.h */,
-				F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */,
-				F1C597AF1BD768C700C63149 /* BMDefines.h */,
-			);
-			name = BMLine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -432,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
