@@ -20,7 +20,7 @@
         {
             //判断此View上的这个位置是否已经存在线，如果存在则覆盖
             NSMutableDictionary *dic=[objc_getAssociatedObject(self, kBMLineStoreKey) mutableCopy];
-            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]]) {
+            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",position]]) {
                 [self removeLineWithPosition:position];
             }
             if (position==BMLinePostionCustomAll) {
@@ -39,7 +39,7 @@
             if (!dic) {
                 dic=@{}.mutableCopy;
             }
-            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]];
+            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",position]];
             objc_setAssociatedObject(self, kBMLineStoreKey, dic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
             [self addSubview:line];
         }
@@ -47,7 +47,7 @@
         case BMLineTypeCustomDash:
         {
             NSMutableDictionary *dic=[objc_getAssociatedObject(self, kBMLineStoreKey) mutableCopy];
-            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]]) {
+            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",position]]) {
                 [self removeLineWithPosition:position];
             }
             if (position==BMLinePostionCustomAll) {
@@ -65,7 +65,7 @@
             if (!dic) {
                 dic=@{}.mutableCopy;
             }
-            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]];
+            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",position]];
             objc_setAssociatedObject(self, kBMLineStoreKey, dic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
             [self addSubview:line];
         }
@@ -73,7 +73,7 @@
         case BMLineTypeCustomDot:
         {
             NSMutableDictionary *dic=[objc_getAssociatedObject(self, kBMLineStoreKey) mutableCopy];
-            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]]) {
+            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",position]]) {
                 [self removeLineWithPosition:position];
             }
             if (position==BMLinePostionCustomAll) {
@@ -91,7 +91,7 @@
             if (!dic) {
                 dic=@{}.mutableCopy;
             }
-            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]];
+            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",position]];
             objc_setAssociatedObject(self, kBMLineStoreKey, dic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
             [self addSubview:line];
         }
@@ -99,7 +99,7 @@
         case BMLineTypeCustomTriangle:
         {
             NSMutableDictionary *dic=[objc_getAssociatedObject(self, kBMLineStoreKey) mutableCopy];
-            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]]) {
+            if ([dic objectForKey:[NSString stringWithFormat:@"%ld",position]]) {
                 [self removeLineWithPosition:position];
             }
             if (position==BMLinePostionCustomAll) {
@@ -117,7 +117,7 @@
             if (!dic) {
                 dic=@{}.mutableCopy;
             }
-            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",(unsigned long)position]];
+            [dic setObject:line forKey:[NSString stringWithFormat:@"%ld",position]];
             objc_setAssociatedObject(self, kBMLineStoreKey, dic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
             [self addSubview:line];
         }
@@ -179,7 +179,7 @@
     if (!dic) {
         return;
     }
-    NSString *dicKey=[NSString stringWithFormat:@"%ld",(unsigned long)position];
+    NSString *dicKey=[NSString stringWithFormat:@"%ld",position];
     UIView *view=[dic objectForKey:dicKey];
     if (!view) {
         return;
