@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F103093E1BE36C3F00A0BA6A /* BMLineCumstomDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F103093B1BE36C3F00A0BA6A /* BMLineCumstomDefault.m */; settings = {ASSET_TAGS = (); }; };
+		F103093F1BE36C3F00A0BA6A /* UIView+BMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F103093D1BE36C3F00A0BA6A /* UIView+BMLine.m */; settings = {ASSET_TAGS = (); }; };
 		F1C597691BD722AB00C63149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C597681BD722AB00C63149 /* main.m */; };
 		F1C5976C1BD722AB00C63149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5976B1BD722AB00C63149 /* AppDelegate.m */; };
 		F1C5976F1BD722AB00C63149 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5976E1BD722AB00C63149 /* ViewController.m */; };
@@ -17,8 +19,6 @@
 		F1C5978D1BD722AB00C63149 /* BMLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5978C1BD722AB00C63149 /* BMLineUITests.m */; };
 		F1C5979D1BD722D400C63149 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5979B1BD722D400C63149 /* TestViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F1C5979E1BD722D400C63149 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C5979C1BD722D400C63149 /* TestViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		F1C597A11BD723CA00C63149 /* UIView+BMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C597A01BD723CA00C63149 /* UIView+BMLine.m */; settings = {ASSET_TAGS = (); }; };
-		F1C597A51BD72A4100C63149 /* BMLineCumstomDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F10309391BE36C3F00A0BA6A /* BMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDefines.h; sourceTree = "<group>"; };
+		F103093A1BE36C3F00A0BA6A /* BMLineCumstomDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLineCumstomDefault.h; sourceTree = "<group>"; };
+		F103093B1BE36C3F00A0BA6A /* BMLineCumstomDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLineCumstomDefault.m; sourceTree = "<group>"; };
+		F103093C1BE36C3F00A0BA6A /* UIView+BMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BMLine.h"; sourceTree = "<group>"; };
+		F103093D1BE36C3F00A0BA6A /* UIView+BMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BMLine.m"; sourceTree = "<group>"; };
 		F1C597641BD722AB00C63149 /* BMLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C597681BD722AB00C63149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1C5976A1BD722AB00C63149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,11 +63,6 @@
 		F1C5979A1BD722D400C63149 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		F1C5979B1BD722D400C63149 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		F1C5979C1BD722D400C63149 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		F1C5979F1BD723CA00C63149 /* UIView+BMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BMLine.h"; path = "../UIView+BMLine.h"; sourceTree = "<group>"; };
-		F1C597A01BD723CA00C63149 /* UIView+BMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BMLine.m"; path = "../UIView+BMLine.m"; sourceTree = "<group>"; };
-		F1C597A31BD72A4100C63149 /* BMLineCumstomDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMLineCumstomDefault.h; path = BMLine/BMLineCumstomDefault.h; sourceTree = SOURCE_ROOT; };
-		F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMLineCumstomDefault.m; path = BMLine/BMLineCumstomDefault.m; sourceTree = SOURCE_ROOT; };
-		F1C597AF1BD768C700C63149 /* BMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BMDefines.h; path = ../BMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +93,11 @@
 		F10309381BE36B7900A0BA6A /* BMLines */ = {
 			isa = PBXGroup;
 			children = (
-				F1C5979F1BD723CA00C63149 /* UIView+BMLine.h */,
-				F1C597A01BD723CA00C63149 /* UIView+BMLine.m */,
-				F1C597A31BD72A4100C63149 /* BMLineCumstomDefault.h */,
-				F1C597A41BD72A4100C63149 /* BMLineCumstomDefault.m */,
-				F1C597AF1BD768C700C63149 /* BMDefines.h */,
+				F10309391BE36C3F00A0BA6A /* BMDefines.h */,
+				F103093A1BE36C3F00A0BA6A /* BMLineCumstomDefault.h */,
+				F103093B1BE36C3F00A0BA6A /* BMLineCumstomDefault.m */,
+				F103093C1BE36C3F00A0BA6A /* UIView+BMLine.h */,
+				F103093D1BE36C3F00A0BA6A /* UIView+BMLine.m */,
 			);
 			name = BMLines;
 			path = BMLine/BMLines;
@@ -300,12 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C597A51BD72A4100C63149 /* BMLineCumstomDefault.m in Sources */,
 				F1C5976F1BD722AB00C63149 /* ViewController.m in Sources */,
 				F1C5976C1BD722AB00C63149 /* AppDelegate.m in Sources */,
 				F1C5979D1BD722D400C63149 /* TestViewController.m in Sources */,
+				F103093F1BE36C3F00A0BA6A /* UIView+BMLine.m in Sources */,
+				F103093E1BE36C3F00A0BA6A /* BMLineCumstomDefault.m in Sources */,
 				F1C597691BD722AB00C63149 /* main.m in Sources */,
-				F1C597A11BD723CA00C63149 /* UIView+BMLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
