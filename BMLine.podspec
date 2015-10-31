@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "AirSars" => "188561521@qq.com" }
   s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/AirSars/BMLine.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/AirSars/BMLine.git", :tag => "v1.0.0" }
   s.source_files  = "BMLines", "BMLines/*.{h,m}"
   s.requires_arc = true
   s.frameworks = "Foundation", "UIKit","QuartzCore"
