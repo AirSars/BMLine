@@ -21,7 +21,7 @@ BMLine!
 ```
 在一个View四周加上线条：
 ```
-[_VIew addLineWithType:BMDashLineWidth color:[UIColor blueColor] position:BMLinePostionCustomAll];
+[_VIew addLineWithType:BMLineTypeCustomDefault color:[UIColor blueColor] position:BMLinePostionCustomAll];
 ```
 删除这个View上某个位置的一条线：
 ```
