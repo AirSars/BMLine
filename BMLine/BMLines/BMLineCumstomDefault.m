@@ -22,14 +22,37 @@
 
 -(void)drawRect:(CGRect)rect
 {
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetLineWidth(context, BMDashLineWidth);
-    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
-    CGFloat lengths[] = {BMDashLineLength};
-    CGContextSetLineDash(context, 0, lengths, 1);
-    CGContextMoveToPoint(context, 0, 0);
-    CGContextAddLineToPoint(context, BMFrameWidth,BMFrameHeight);
-    CGContextStrokePath(context);
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    [shapeLayer setBounds:self.frame];
+    [shapeLayer setPosition:self.center];
+    [shapeLayer setFillColor:[[UIColor clearColor] CGColor]];
+    // 设置虚线颜色为blackColor
+    [shapeLayer setStrokeColor:self.color.CGColor];
+    // 3.0f设置虚线的宽度
+    [shapeLayer setLineWidth:BMDashLineWidth];
+    [shapeLayer setLineJoin:kCALineJoinRound];
+    
+    // 3=线的宽度 1=每条线的间距
+    [shapeLayer setLineDashPattern:
+     [NSArray arrayWithObjects:[NSNumber numberWithInt:BMDashLineLength],
+      [NSNumber numberWithInt:1],nil]];
+    
+    // Setup the path
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, 0,0);
+    CGPathAddLineToPoint(path, NULL, BMFrameWidth,BMFrameHeight);
+    [shapeLayer setPath:path];
+    CGPathRelease(path);
+    [self.layer addSublayer:shapeLayer];
+    
+    //    CGContextRef context = UIGraphicsGetCurrentContext();
+    //    CGContextSetLineWidth(context, BMDashLineWidth);
+    //    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
+    //    CGFloat lengths[] = {BMDashLineLength};
+    //    CGContextSetLineDash(context, 0, lengths, 1);
+    //    CGContextMoveToPoint(context, 0, 0);
+    //    CGContextAddLineToPoint(context, BMFrameWidth,BMFrameHeight);
+    //    CGContextStrokePath(context);
 }
 @end
 
