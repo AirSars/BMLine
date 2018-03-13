@@ -33,7 +33,7 @@
             if (color) {
                 line.backgroundColor=color;
             }else{
-                line.backgroundColor=bgColor;
+                line.backgroundColor=BMLine_bgColor;
             }
             //将对象关联到此View
             if (!dic) {
@@ -59,7 +59,7 @@
             if (color) {
                 line.color=color;
             }else{
-                line.color=bgColor;
+                line.color=BMLine_bgColor;
             }
             [self lineWithPositionAndColor:line position:position width:BMDashLineWidth];
             if (!dic) {
@@ -85,7 +85,7 @@
             if (color) {
                 line.color=color;
             }else{
-                line.color=bgColor;
+                line.color=BMLine_bgColor;
             }
             [self lineWithPositionAndColor:line position:position width:2*BMDotLineRadius];
             if (!dic) {
@@ -111,7 +111,7 @@
             if (color) {
                 line.color=color;
             }else{
-                line.color=bgColor;
+                line.color=BMLine_bgColor;
             }
             [self lineWithPositionAndColor:line position:position width:sqrtf(3)*BMTriangleLength/2+1];
             if (!dic) {

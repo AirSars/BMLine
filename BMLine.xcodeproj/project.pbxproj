@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F103093E1BE36C3F00A0BA6A /* BMLineCumstomDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F103093B1BE36C3F00A0BA6A /* BMLineCumstomDefault.m */; settings = {ASSET_TAGS = (); }; };
-		F103093F1BE36C3F00A0BA6A /* UIView+BMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F103093D1BE36C3F00A0BA6A /* UIView+BMLine.m */; settings = {ASSET_TAGS = (); }; };
+		F103093E1BE36C3F00A0BA6A /* BMLineCumstomDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F103093B1BE36C3F00A0BA6A /* BMLineCumstomDefault.m */; };
+		F103093F1BE36C3F00A0BA6A /* UIView+BMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F103093D1BE36C3F00A0BA6A /* UIView+BMLine.m */; };
 		F1C597691BD722AB00C63149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C597681BD722AB00C63149 /* main.m */; };
 		F1C5976C1BD722AB00C63149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5976B1BD722AB00C63149 /* AppDelegate.m */; };
 		F1C5976F1BD722AB00C63149 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5976E1BD722AB00C63149 /* ViewController.m */; };
@@ -17,8 +17,8 @@
 		F1C597771BD722AB00C63149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C597751BD722AB00C63149 /* LaunchScreen.storyboard */; };
 		F1C597821BD722AB00C63149 /* BMLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C597811BD722AB00C63149 /* BMLineTests.m */; };
 		F1C5978D1BD722AB00C63149 /* BMLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5978C1BD722AB00C63149 /* BMLineUITests.m */; };
-		F1C5979D1BD722D400C63149 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5979B1BD722D400C63149 /* TestViewController.m */; settings = {ASSET_TAGS = (); }; };
-		F1C5979E1BD722D400C63149 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C5979C1BD722D400C63149 /* TestViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		F1C5979D1BD722D400C63149 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5979B1BD722D400C63149 /* TestViewController.m */; };
+		F1C5979E1BD722D400C63149 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1C5979C1BD722D400C63149 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
